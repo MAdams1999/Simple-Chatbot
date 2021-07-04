@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <div id="cloud-intro">
+    <div class="chat_icon">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+
+    <div class="chat_box">
+        <div class="conv-form-wrapper">
+        <form action="" method="GET" class="hidden">
+            <input type="text" data-conv-question="Hello! | Howdy!" data-no-answer="true">
+            <select data-conv-question="I am Cloud-bot. Can I show you something?" name="first-question">
+                <option value="yes">Yes</option>
+                <option value="sure">Sure!</option>
+            </select>
+            <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+            <input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you." data-no-answer="true">
+            <input type="text" data-conv-question="I can do multi-select questions too." data-no-answer="true">
+            <select name="multi[]" data-conv-question="What kind of music do you like?" multiple>
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="R&B">R&B</option>
+                <option value="Classic">Classic</option>
+            </select>
+            <input type="text" data-conv-question="I can also do regex patterns. Look:" data-no-answer="true">
+            <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+            <input data-conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
+            <input type="text" data-conv-question="That was fun" data-no-answer="true">
+            <select data-conv-question="Thank you for talking to me.">
+                <option value="">Bye!</option>
+            </select>
+        </form>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

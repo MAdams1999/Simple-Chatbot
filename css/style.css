@@ -1,0 +1,75 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+.chat_icon{
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    font-size: 80px;
+    color: rgba(163, 218, 119, 0.774);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat_box{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 400px;
+    height: 80vh;
+    border-radius: 20px;
+    background: #dedede;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+}
+.chat_box.active{
+    transform: scaleY(1);
+}
+
+.hidden{
+    display: none !important;
+}
+
+.conv-form-wrapper textarea{
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+
+}
+#messages{
+    padding: 20px;
+}
+
+html, body, .container{
+    width: 100%;
+    height: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .container{
+    background-color: #007ced;
+      background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+  }
+
+#cloud-intro{
+    position: relative;
+    height: 100%;
+    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+                url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+                url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+      animation: wind 20s linear infinite;
+  }
+  @keyframes wind{
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    100% {
+      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    }
+  
+  }
