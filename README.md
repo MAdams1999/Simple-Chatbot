@@ -1,5 +1,5 @@
 # Simple-Chatbot
-This is a simple chatbot using only HTML, CSS and JQuery. Which also contains a animated cloudy background.
+This is a simple chatbot using only HTML, CSS and JQuery. Which also contains a animated background.
 
 To Run the code simply open index.html with your browser[Chrome, Edge etc..]
 
