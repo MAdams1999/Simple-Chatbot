@@ -92,7 +92,7 @@ form.convFormDynamic textarea.userInputDynamic {
     border: none;
     padding: 7px 10px;
     outline: none;
-    font-size: 0.905rem;
+    font-size: 1.2rem;
     float: left;
     width: calc(100% - 70px);
     line-height: 1.3em;
@@ -108,7 +108,7 @@ form.convFormDynamic input.userInputDynamic {
     border: none;
     padding: 7px 10px;
     outline: none;
-    font-size: 0.905rem;
+    font-size: 1.25rem;
     float: left;
     width: calc(100% - 70px);
     line-height: 1.3em;
@@ -224,7 +224,7 @@ div.conv-form-wrapper div.options div.option {
     color: #06c5a6;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 div.conv-form-wrapper div.message {
     animation: slideTop 0.15s ease;
@@ -241,7 +241,7 @@ div.conv-form-wrapper  div.message.ready {
 div.conv-form-wrapper  div#messages div.message {
     border-radius: 20px;
     padding: 12px 22px;
-    font-size: 0.905rem;
+    font-size: 1.8rem;
     color: #333;
     display: inline-block;
     padding: 10px 15px 8px;
